@@ -1,0 +1,59 @@
+.mentor {
+  padding: 40px 0px;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+  }
+
+  &__left img {
+    width: 100%;
+  }
+  &__title {
+    font-family: Rubik;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px 0px;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+  }
+  &__btn {
+    margin-top: 20px;
+    font-family: Montserrat SemiBold;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px 30px;
+    color: $secondaryCl;
+    border-radius: 10px;
+    background: $hoverCl;
+    border: none;
+  }
+
+  @media (max-width:900px) {
+    &__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+    &__text:nth-child(2) {
+      display: none;
+    }
+
+    &__title {
+      font-size: 36px;
+      line-height: 35px;
+    }
+  }
+}

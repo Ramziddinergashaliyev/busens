@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Sass</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__navbar container df">
+        <div class="header__logo">
+          <a href="./index.html">
+            <img src="./images/Logo (1).png" alt="" />
+          </a>
+        </div>
+
+        <div class="header__form">
+          <input placeholder="Search bar" type="text" />
+          <img src="./images/Search.png" alt="" />
+        </div>
+        <div class="navbar__link dr">
+          <div class="dropdown">
+            <p class="dropdown__text">
+              Dropdown
+              <span class="dropdown__icon">
+                <i class="fa-solid fa-chevron-up"></i>
+              </span>
+            </p>
+            <ul class="dropdown__list">
+              <li class="dropdown__list__item">
+                <a href="#">Item 1</a>
+              </li>
+              <li class="dropdown__list__item">
+                <a href="#">Item 1</a>
+              </li>
+              <li class="dropdown__list__item">
+                <a href="#">Item 1</a>
+              </li>
+              <li class="dropdown__list__item">
+                <a href="#">Item 1</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__link">
+          <a class="hero__link" href="#">Become an Mentor</a>
+        </div>
+        <div class="btns">
+          <a class="login__btn">Login</a>
+          <a class="sign__btn">Login</a>
+        </div>
+        <button class="header__hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <section class="container hero">
+        <div class="hero__card">
+          <div class="hero__left">
+            <h1 class="hero__left__title">
+              Find the Best Courses and Amazing Mentor
+            </h1>
+            <p class="hero__left__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna fringilla
+              urna, porttitor rhoncus
+            </p>
+            <div class="hero__btn">
+              <img src="./images/Search.png" alt="" />
+              <input
+                placeholder="Type in the course you want to learn"
+                type="text"
+              />
+              <button class="hero__search__btn">Search</button>
+            </div>
+
+            <div class="hero__bottom">
+              <div class="hero__bottom__card">
+                <img src="./images/user.png" alt="" />
+                <p class="hero__bottom__title">Life Time Acces</p>
+              </div>
+              <div class="hero__bottom__card">
+                <img src="./images/user.png" alt="" />
+                <p class="hero__bottom__title">Life Time Acces</p>
+              </div>
+              <div class="hero__bottom__card">
+                <img src="./images/user.png" alt="" />
+                <p class="hero__bottom__title">Life Time Acces</p>
+              </div>
+            </div>
+          </div>
+          <div class="hero__right">
+            <img class="hero__right__img" src="./images/Bell Icon.png" alt="" />
+            <img class="hero__right__img" src="./images/Love Icon.png" alt="" />
+            <img
+              class="hero__right__img"
+              src="./images/Verification Icon.png"
+              alt=""
+            />
+            <img class="hero__right__img" src="./images/Review.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <h1 class="courses__title">Trending Courses</h1>
+        <div class="ap-tab">
+          <ul class="ap-tab-list courses__item">
+            <li class="ap-tab-item active-tab">
+              <a class="ap-tab-link courses__list active-tab" href="#">All</a>
+            </li>
+            <li class="ap-tab-item active-tab">
+              <a class="ap-tab-link courses__list active-tab" href="#"
+                >Business</a
+              >
+            </li>
+            <li class="ap-tab-item active-tab">
+              <a class="ap-tab-link courses__list active-tab" href="#"
+                >Art & Design</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="ap-tab-container">
+          <div class="ap-tab-content">
+            <div class="courses__cards">
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/rasm-1.jfif"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/rasm-2.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/rasm-3.jfif"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/beseness.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-1.jfif"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-2.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-3.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-4.jpg"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ap-tab-content">
+            <div class="courses__cards">
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/beseness.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-1.jfif"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-3.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-4.jpg"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ap-tab-content">
+            <div class="courses__cards">
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/rasm-1.jfif"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/rasm-2.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/rasm-3.jfif"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+              <div class="courses__card">
+                <img
+                  class="courses__card__img"
+                  src="./images/buseness-2.webp"
+                  alt=""
+                />
+                <button class="courses__btn">Web Developer</button>
+                <h3 class="courses__card__title">
+                  Interpersonal skills - work better with others!
+                </h3>
+                <p class="courses__card__text">Tanah Air Team</p>
+                <img src="./images/star.png" alt="" />
+                <div style="display: flex; align-items: center; gap: 10px">
+                  <p>$640</p>
+                  <h1>$735</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="courses__bottom__btns">
+          <button class="courses__bottom__btn">More Courses</button>
+        </div>
+      </section>
+
+      <section class="container about">
+        <h1 class="about__title">Top Categories</h1>
+        <div class="about__cards">
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+          <div class="about__card">
+            <h2 class="about__card__title">Art & Design</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="container contact">
+        <div class="contact__cards">
+          <div class="contact__card">
+            <img src="./images/video_library.svg" alt="" />
+            <h1 class="contact__card__title">10.000+</h1>
+            <p class="contact__card__text">Courses</p>
+          </div>
+          <div class="contact__card">
+            <img src="./images/video_library.svg" alt="" />
+            <h1 class="contact__card__title">10.000+</h1>
+            <p class="contact__card__text">Courses</p>
+          </div>
+          <div class="contact__card">
+            <img src="./images/video_library.svg" alt="" />
+            <h1 class="contact__card__title">10.000+</h1>
+            <p class="contact__card__text">Courses</p>
+          </div>
+          <div class="contact__card">
+            <img src="./images/video_library.svg" alt="" />
+            <h1 class="contact__card__title">10.000+</h1>
+            <p class="contact__card__text">Courses</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mentor">
+        <div class="mentor__cards">
+          <div class="mentor__left">
+            <img src="./images/images.png" alt="" />
+          </div>
+          <div class="mentor__right">
+            <h2 class="mentor__title">Become an Mentor</h2>
+            <p class="mentor__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum
+              a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis
+              non id proin elit placerat. Lectus morbi amet et aliquam magna
+              mauris.
+            </p>
+            <br />
+            <p class="mentor__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat
+              eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum
+              a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis
+              non id proin elit placerat. Lectus morbi amet et aliquam magna
+              mauris.
+            </p>
+            <button class="mentor__btn">Start Teaching</button>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+          <div class="item" style="width: 550px">
+            <div class="block__left">
+              <img src="./images/buseness-2.webp" alt="" />
+            </div>
+          </div>
+          <div class="item" style="width: 550px">
+            <div class="block__right">
+              <h3 class="block__title">
+                After studying here I gained new knowledge and insights. The
+                mentor was very friendly and guided me to get the knowledge I
+                wanted. Thank you!
+              </h3>
+              <h1 class="block__text">KecekArif</h1>
+            </div>
+          </div>
+          <div class="item" style="width: 550px">
+            <div class="block__left">
+              <img src="./images/buseness-2.webp" alt="" />
+            </div>
+          </div>
+          <div class="item" style="width: 550px">
+            <div class="block__right">
+              <h3 class="block__title">
+                After studying here I gained new knowledge and insights. The
+                mentor was very friendly and guided me to get the knowledge I
+                wanted. Thank you!
+              </h3>
+              <h1 class="block__text">KecekArif</h1>
+            </div>
+          </div>
+          <div class="item" style="width: 550px">
+            <div class="block__left">
+              <img src="./images/buseness-2.webp" alt="" />
+            </div>
+          </div>
+          <div class="item" style="width: 550px">
+            <div class="block__right">
+              <h3 class="block__title">
+                After studying here I gained new knowledge and insights. The
+                mentor was very friendly and guided me to get the knowledge I
+                wanted. Thank you!
+              </h3>
+              <h1 class="block__text">KecekArif</h1>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <section class="container company">
+        <h1 class="company__title">Trusted by Company</h1>
+        <div class="company__cards">
+          <img src="./images/01.png" alt="" />
+          <img src="./images/02.png" alt="" />
+          <img src="./images/05.png" alt="" />
+          <img src="./images/01.png" alt="" />
+          <img src="./images/02.png" alt="" />
+          <img src="./images/05.png" alt="" />
+        </div>
+      </section>
+
+      <section class="container read">
+        <h1 class="read__title">The Latest Blog</h1>
+        <div class="read__cards">
+          <div class="read__card">
+            <img src="./images/buseness-1.jfif" alt="" />
+            <div class="read__info">
+              <p class="read__desc">3 min read</p>
+              <h2 class="read__card__title">
+                10 graphic design trends to get you inspired in 2021
+              </h2>
+              <p class="read__text">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+              <a class="read__link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="read__card">
+            <img src="./images/buseness-1.jfif" alt="" />
+            <div class="read__info">
+              <p class="read__desc">3 min read</p>
+              <h2 class="read__card__title">
+                10 graphic design trends to get you inspired in 2021
+              </h2>
+              <p class="read__text">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+              <a class="read__link" href="#">Read More</a>
+            </div>
+          </div>
+          <div class="read__card">
+            <img src="./images/buseness-1.jfif" alt="" />
+            <div class="read__info">
+              <p class="read__desc">3 min read</p>
+              <h2 class="read__card__title">
+                10 graphic design trends to get you inspired in 2021
+              </h2>
+              <p class="read__text">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do
+                eiusmod.
+              </p>
+              <a class="read__link" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__cards">
+            <div>
+              <img src="./images/Logo.svg" alt="" />
+              <p class="footer__title">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet
+                tristique placerat eleifend aliquam pellentesque facilisis
+                ultrices. Imperdiet mus urna egestas at tellus.
+              </p>
+            </div>
+            <div>
+              <h2 class="footer__desc">About</h2>
+              <ul>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">About us</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Courses</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Mentor</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="footer__desc">Support</h2>
+              <ul>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Careers</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Help & Support</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2 class="footer__desc">Company</h2>
+              <ul>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">APrivacy Policy</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Terms of Service</a>
+                </li>
+                <li class="footer__list">
+                  <a class="footer__link" href="#">Code of Conduct</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div style="display: flex; flex-wrap: wrap">
+              <p class="footer__title">Privacy Policy</p>
+              <p class="footer__title">Terms and Condition</p>
+            </div>
+            <p class="footer__title">
+              @2020 TanahAir Studio. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/abdulazizcreator/ap-tab/main.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>

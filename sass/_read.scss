@@ -1,0 +1,79 @@
+.read {
+  padding: 40px 0px;
+  &__title {
+    font-family: Rubik;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+  &__desc {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+  }
+
+  &__card__title {
+    font-family: Rubik;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__text {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #808080;
+    padding: 10px 0px;
+  }
+
+  &__link {
+    font-family: Montserrat SemiBold;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $hoverCl;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  &__card {
+    padding: 15px;
+    border-radius: 10px;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__card:hover {
+    box-shadow: 1px 1px 10px gray;
+  }
+
+  @media (max-width: 1000px) {
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 670px) {
+    &__cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.company {
+  padding: 40px 0px;
+  &__title {
+    font-family: Rubik;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 10px 0px;
+  }
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    justify-content: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width:1000px) {
+    &__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  }
+  @media (max-width:700px) {
+    &__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+  @media (max-width:400px) {
+    &__cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+   &__title {
+    font-size: 36px;
+   }
+  }
+}

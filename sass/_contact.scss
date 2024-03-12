@@ -1,0 +1,42 @@
+.contact {
+  padding: 40px 0px;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+  }
+  &__card {
+    text-align: center;
+    padding: 20px;
+    &__title {
+      font-family: Rubik;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: 0em;
+    }
+    &__text {
+      font-family: Rubik;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 32px;
+      letter-spacing: 0em;
+    }
+  }
+
+  &__card:hover {
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 10px;
+  }
+
+  @media (max-width:1000px) {
+    &__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  }
+  @media (max-width:500px) {
+    &__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  }
+}
